@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd">
+
+<mapper namespace="com.church.demo.db">
+    <select id="selectName" resultType="string">
+        SELECT name
+        FROM teacher
+    </select>
+    <select id="validate_teacher" parameterType="string" resultType="com.church.demo.teacher_inf.teacherDTO">
+        SELECT *
+        FROM teacher
+        WHERE teacher_id=#{id}
+    </select>
+</mapper>
