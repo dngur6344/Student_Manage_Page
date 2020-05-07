@@ -158,3 +158,5 @@ buildNumber.properties
 /src/main/resources/application.properties
 # End of https://www.gitignore.io/api/java,macos,maven,intellij
 
+!/src/main/resources/application.properties
+application.properties
