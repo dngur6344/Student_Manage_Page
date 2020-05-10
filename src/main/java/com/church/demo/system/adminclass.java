@@ -36,6 +36,7 @@ public class adminclass {
     @RequestMapping(value = "/adminloginsuc",method=RequestMethod.GET)
     public String goStudent2(Model model){
         model.addAttribute("name",apiDao.selectName());
+
         return "adminpage/adminloginsuc";
     }
 }
